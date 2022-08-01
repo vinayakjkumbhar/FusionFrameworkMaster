@@ -2,10 +2,16 @@ package com.fusion.testcases;
 
 import java.io.File;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import com.fusion.utility.*;
+import com.fusion.pages.DeviceManager;
 import com.fusion.pages.FusionLoginPage;
 
 /*
@@ -43,6 +49,7 @@ public class VerifyFusionLogin {
 
 
 		FusionLoginPage login=new FusionLoginPage(driver);
+		DeviceManager dm=new DeviceManager(driver);
 
 		login.enterUSerName();
 		login.enterPassword();
@@ -51,6 +58,12 @@ public class VerifyFusionLogin {
 		//login.clickClearButton();
 		login.enterLoginButton();
 		//driver.close();
+
+		dm.clicklogoutbutton();
+		dm.confirmok();
+
+		driver.close();
+
 
 	}
 }
