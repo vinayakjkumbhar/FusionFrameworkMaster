@@ -15,12 +15,9 @@ public class DeviceManager {
 	WebDriver driver;
 	//deleted int variable 
 	
-	By username=By.id("UserName");
-	By password=By.xpath("//input[@id='Password']");
-	By loginbutton=By.xpath("//input[@id='btnLogin']");
-	By rememberMe=By.xpath("//input[@id='RememberMe']");
-	By ClearButton=By.xpath("//input[@id='ClearButton']");
-	By forgotPassword=By.xpath("//span[@id='spnForgotPass']");
+	
+	By logoutbutton=By.xpath("//a[@id='HeadLoginStatus']");
+	
 
 	
 

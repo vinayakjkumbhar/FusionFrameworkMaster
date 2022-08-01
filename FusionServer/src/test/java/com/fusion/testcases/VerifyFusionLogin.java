@@ -19,27 +19,27 @@ import com.fusion.pages.FusionLoginPage;
 public class VerifyFusionLogin {
 
 	WebDriver driver;
-	
+
 	@Test(priority=1,description="Valid User login successfully.")
-	
+
 	public void verifyValidUserLogin()
 	{
-		
+
 		ConfigFileReader config=new ConfigFileReader();
-		
+
 		String chromePath=System.getProperty("user.dir")+File.separator+config.getChromeDriver();
-		
+
 		System.setProperty("webdriver.chrome.driver",chromePath);
-		
+
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		
+
 		System.out.println(config.getApplicationUrl());
-		
+
 		driver.get(config.getApplicationUrl());
 
-	//	driver.findElement(By.xpath("//button[@id='details-button']")).click();
-	//	driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
+		//	driver.findElement(By.xpath("//button[@id='details-button']")).click();
+		//	driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
 
 
 		FusionLoginPage login=new FusionLoginPage(driver);
@@ -47,12 +47,10 @@ public class VerifyFusionLogin {
 		login.enterUSerName();
 		login.enterPassword();
 		login.clickrememberMe();
-		login.clickforgotPassword();
-		
-				
+		//login.clickforgotPassword();
 		//login.clickClearButton();
-		//login.enterLoginButton();
-		///driver.close();
+		login.enterLoginButton();
+		//driver.close();
 
 	}
 }

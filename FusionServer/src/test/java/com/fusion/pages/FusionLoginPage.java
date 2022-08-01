@@ -18,13 +18,9 @@ public class FusionLoginPage {
 	By username=By.id("UserName");
 	By password=By.xpath("//input[@id='Password']");
 	By loginbutton=By.xpath("//input[@id='btnLogin']");
-	
 	By rememberMe=By.xpath("//input[@id='RememberMe']");
 	By forgotPassword=By.xpath("//span[@id='spnForgotPass']");
 	By ClearButton=By.xpath("//input[@id='ClearButton']");
-	
-
-	
 
 	public FusionLoginPage(WebDriver driver)
 	{
