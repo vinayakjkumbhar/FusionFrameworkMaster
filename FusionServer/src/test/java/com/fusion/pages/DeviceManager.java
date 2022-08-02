@@ -31,9 +31,10 @@ public class DeviceManager {
 	
 	public void clicklogoutbutton()
 	{
-		WebDriverWait wdwait=new WebDriverWait(	driver,50);
-		WebElement wl=wdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='HeadLoginStatus']")));
-		wl.click();
+//		WebDriverWait wdwait=new WebDriverWait(driver,500);
+//		
+//		WebElement wl=wdwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='HeadLoginStatus']")));
+//		wl.click();
 		//driver.findElement(logoutbutton).click();
 				
 	}
