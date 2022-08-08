@@ -7,6 +7,7 @@ public class DiscoveryView {
 	
 	WebDriver driver;
 	
+	//done changes for webdriver please check 
 	
 	By discoveryButton=By.xpath("//a[@id='imgBtnDiscoverClient']");
 
