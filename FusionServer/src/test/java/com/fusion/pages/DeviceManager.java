@@ -16,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DeviceManager {
 	
 	WebDriver driver;
-	//deleted int variable 
 	
 	
 	By logoutbutton=By.xpath("//a[@id='HeadLoginStatus']");
